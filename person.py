@@ -20,5 +20,8 @@ class Person(object):
 	def set(self, age):
 		lib.Person_set(self.obj, age)
         
+	def fib_cc(self):
+		return lib.Person_fib_cc(self.obj)
+        
 	def __del__(self):
 		return lib.Person_delete(self.obj)
