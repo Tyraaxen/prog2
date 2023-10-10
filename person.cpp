@@ -6,6 +6,7 @@ class Person{
 		Person(int);
 		int get();
 		void set(int);
+		int fib_cc(int);
 	private:
 		int age;
 	};
@@ -22,6 +23,16 @@ void Person::set(int n){
 	age = n;
 	}
 
+int Person::fib_cc(int n){
+	n = age;
+	if(n<=1){
+		return n;
+		}
+	 else{
+		return fib_cc(n-1) + fib_cc(n-2);
+		}
+	}
+
 
 extern "C"{
 	Person* Person_new(int n) {return new Person(n);}
@@ -33,4 +44,5 @@ extern "C"{
 			person = nullptr;
 			}
 		}
+	int Person_fib_cc(Person* person) {return person->fib_cc(n);}
 	}
