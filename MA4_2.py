@@ -4,13 +4,14 @@ from  fib_numba import fib_numba
 from person import Person
 
 def main():
+    n = 20
 	f = Person(5)
 	print(f.get())
-	f.set(7)
+	f.set(n)
 	print(f.get())
 	print('cc: ', f.fib_cc())
-	print('python: ', fib_py(7))
-	print('python: ', fib_numba(7))
+	print('python: ', fib_py(n))
+	print('numba: ', fib_numba(n))
 
 if __name__ == '__main__':
 	main()
