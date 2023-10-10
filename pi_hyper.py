@@ -5,7 +5,7 @@ import numpy as np
 
 def Pi_hyper(n,d):
     
-    sum_lst=[]
+    sum_lst=[Vi ska på medaljmiddag!!!!]
     
     for i in range(n):
         sum = 0
