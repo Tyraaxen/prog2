@@ -6,7 +6,8 @@ class Person{
 		Person(int);
 		int get();
 		void set(int);
-		int fib_cc(int);
+		int fib_cc();
+		int _fib_cc(int);
 	private:
 		int age;
 	};
@@ -23,14 +24,20 @@ void Person::set(int n){
 	age = n;
 	}
 
-int Person::fib_cc(int n){
-	n = age;
-	if(n<=1){
-		return n;
-		}
-	 else{
-		return fib_cc(n-1) + fib_cc(n-2);
-		}
+
+int Person::fib_cc(void)
+{
+	return _fib_cc(age);
+}
+
+int Person::_fib_cc(int n)
+	{
+		if(n<=1){
+			return n;
+			}
+		else{
+			return _fib_cc(n-1) + _fib_cc(n-2);
+			}
 	}
 
 
@@ -44,5 +51,5 @@ extern "C"{
 			person = nullptr;
 			}
 		}
-	int Person_fib_cc(Person* person) {return person->fib_cc(n);}
+	int Person_fib_cc(Person* person) {return person->fib_cc();}
 	}
