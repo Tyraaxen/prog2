@@ -44,4 +44,4 @@ def Pi_hyper_paralell(n,d,num_processes=10):
     return sum(results)/d
 
 if __name__ == '__main__':
-    Pi_hyper_paralell(10,4)
+    Pi_hyper_paralell(10,4) 

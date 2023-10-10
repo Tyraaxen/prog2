@@ -19,7 +19,6 @@ def Pi(n):
         else:
             lst_nk_x.append(x)
             lst_nk_y.append(y)
-        #i += 1
         
     plt.plot(lst_nc_x,lst_nc_y, 'ro', lst_nk_x, lst_nk_y, 'bo')
     plt.axis((-1,1,-1,1))
