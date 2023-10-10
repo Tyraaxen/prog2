@@ -8,7 +8,7 @@ def main():
 	f.set(7)
 	print(f.get())
 	print('hej')
-	print(f.fib_cc(7))
+	print(f.fib_cc())
 
 if __name__ == '__main__':
 	main()
