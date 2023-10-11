@@ -12,12 +12,12 @@ def main():
     t1_stop = perf_counter()
     
     'python'
-    t2_start = perf_counter
+    t2_start = perf_counter()
     f_py = fib_py(n)
     t2_stop = perf_counter()
     
     'numba'
-    t3_start = perf_counter
+    t3_start = perf_counter()
     f_py = fib_numba(n)
     t3_stop = perf_counter()
     
