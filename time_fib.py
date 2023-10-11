@@ -36,7 +36,11 @@ def main():
         # print('time for py = ', t2_stop-t2_start)
         # print('numba: ', fib_numba(n))
         # print('time for nu = ', t3_stop-t3_start)
-    plt.plot(t,timelst_cc,'r--',t,timelst_nu,'bs',t,timelst_py,'g^',)
+    plt.plot(t,timelst_cc,'r--', label = 'C++')
+    plt.plot(t,timelst_nu,'bs', label = 'numba')
+    plt.plot(t,timelst_py,'g^', label = 'python')
+    plt.ylabel('time')
+    plt.xlabel('n')
     plt.show()
     plt.savefig("fib_plt.png")
 
