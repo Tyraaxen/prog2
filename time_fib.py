@@ -7,11 +7,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def main():
-    t = np.arange(30,40,1)
+    t = np.arange(30,35,1)
     timelst_cc = []
     timelst_py = []
     timelst_nu = []
-    for n in range(30,40):
+    for n in range(30,35):
         t1_start = perf_counter()
         f = Person(n)
         f_cc = f.fib()
