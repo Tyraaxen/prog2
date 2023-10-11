@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def main():
-    t = np.arrange(30,40,1)
+    t = np.arange(30,40,1)
     timelst_cc = []
     timelst_py = []
     timelst_nu = []
