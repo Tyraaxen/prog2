@@ -9,7 +9,7 @@ def main():
 	print(f.get())
 	f.set(n)
 	print(f.get())
-	print('cc: ', f.fib_cc())
+	print('cc: ', f.fib())
 	print('python: ', fib_py(n))
 	print('numba: ', fib_numba(n))
 

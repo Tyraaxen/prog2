@@ -22,14 +22,16 @@ def Pi(n):
         
     plt.plot(lst_nc_x,lst_nc_y, 'ro', lst_nk_x, lst_nk_y, 'bo')
     plt.axis((-1,1,-1,1))
+    plt.title(n)
     plt.show()
     
     pi_exact = math.pi
     pi_approx = 4*n_c/n
-    print(pi_exact)
-    print(pi_approx)
-    print(n_c)
+    print('approximerade konstanten pi: ', pi_approx)
+    print('Inbyggda konstanten pi: ', pi_exact)
+    print('Antalet punkter som hamnade i cirkeln: ', n_c)
     
     return pi_exact
 
-Pi(400)
+for n in [1000, 10000, 100000]:
+    Pi(n)
