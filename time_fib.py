@@ -41,6 +41,7 @@ def main():
     plt.plot(t,timelst_py, label = 'python')
     plt.ylabel('time')
     plt.xlabel('n')
+    plt.legend()
     plt.show()
     plt.savefig("fib_plt.png")
 
