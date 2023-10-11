@@ -5,7 +5,7 @@ from person import Person
 from time import perf_counter
 
 def main():
-    n = 20
+    n = 45
     t1_start = perf_counter()
     f = Person(n)
     f_cc = f.fib()
