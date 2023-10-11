@@ -37,6 +37,8 @@ def main():
         # print('numba: ', fib_numba(n))
         # print('time for nu = ', t3_stop-t3_start)
     plt.plot(t,timelst_cc,'r--',t,timelst_nu,'bs',t,timelst_py,'g^',)
+    plt.show()
+    plt.savefig("fib_plt.png")
 
 if __name__ == '__main__':
 	main()
