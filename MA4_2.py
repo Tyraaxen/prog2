@@ -1,3 +1,7 @@
+# Date  2023-10-12
+# Rewied by: Naser Shabani
+# Email: tyra_axen@hotmail.se
+
 #!/usr/bin/env python3
 from fib import fib_py
 from  fib_numba import fib_numba
@@ -10,8 +14,6 @@ def main():
 	f.set(n)
 	print(f.get())
 	print('cc: ', f.fib())
-	print('python: ', fib_py(n))
-	print('numba: ', fib_numba(n))
 
 if __name__ == '__main__':
 	main()
