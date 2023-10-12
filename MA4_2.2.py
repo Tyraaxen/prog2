@@ -1,3 +1,7 @@
+# Date  2023-10-12
+# Rewied by: Naser Shabani
+# Email: tyra_axen@hotmail.se
+
 #!/usr/bin/env python3
 from fib import fib_py
 from  fib_numba import fib_numba
@@ -46,6 +50,10 @@ def main():
     plt.legend()
     plt.show()
     plt.savefig("fib_plt.png")
+    
+    #fib(47) för C++ är:  -1323752223
+    #fib(47) för numba är:  2971215073
+    #explanation: The negative number is because of integer owerflow
 
 if __name__ == '__main__':
 	main()

@@ -1,3 +1,7 @@
+# Date  2023-10-12
+# Rewied by: Naser Shabani
+# Email: tyra_axen@hotmail.se
+
 """ Python interface to the C++ Person class """
 import ctypes
 lib = ctypes.cdll.LoadLibrary('./libperson.so')

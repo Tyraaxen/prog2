@@ -1,3 +1,7 @@
+// Date  2023-10-12
+// Rewied by: Naser Shabani
+// Email: tyra_axen@hotmail.se
+
 #include <cstdlib>
 // Person class 
 
@@ -10,6 +14,11 @@ class Person{
 		int _fib(int);
 	private:
 		int age;
+		int fib(int n){
+			if(n<=2)
+			return 1;
+		return (fib(n-1)+fib(n-2));
+		}
 	};
  
 Person::Person(int n){
@@ -25,20 +34,9 @@ void Person::set(int n){
 	}
 
 
-int Person::fib(void)
-{
-	return _fib(age);
+int Person::fib(void){
+	return fib(get());
 }
-
-int Person::_fib(int n)
-	{
-		if(n<=1){
-			return n;
-			}
-		else{
-			return _fib(n-1) + _fib(n-2);
-			}
-	}
 
 
 extern "C"{

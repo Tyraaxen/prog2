@@ -1,3 +1,7 @@
+# Date  2023-10-12
+# Rewied by: Naser Shabani
+# Email: tyra_axen@hotmail.se
+
 import math
 import random
 import matplotlib.pyplot as plt
@@ -24,7 +28,6 @@ def Pi(n):
     plt.axis((-1,1,-1,1))
     plt.title(n)
     plt.show()
-    
     pi_exact = math.pi
     pi_approx = 4*n_c/n
     print('approximerade konstanten pi: ', pi_approx)

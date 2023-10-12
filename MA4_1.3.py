@@ -1,3 +1,7 @@
+# Date  2023-10-12
+# Rewied by: Naser Shabani
+# Email: tyra_axen@hotmail.se
+
 import math
 import random
 
@@ -41,7 +45,7 @@ def Pi_hyper_paralell(n,d=11,num_processes=10):
 
 if __name__ == '__main__':
     t1_start = pc()
-    print('approximated volume for hyper_paralell:', Pi_hyper_paralell(1000000,11)) 
+    print('approximated volume for hyper_paralell:', Pi_hyper_paralell(10000000,11)) 
     t1_stop = pc()
     print('time for hyper_paralell:', t1_stop-t1_start,'seconds')
     
