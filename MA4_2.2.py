@@ -7,11 +7,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def main():
-    t = np.arange(30,45,1)
+    t = np.arange(30,35,1)
     timelst_cc = []
     timelst_py = []
     timelst_nu = []
-    for n in range(30,45):
+    for n in range(30,35):
         'C++'
         t1_start = perf_counter()
         f = Person(n)
@@ -33,9 +33,15 @@ def main():
         
     
     'fib(47)'
+<<<<<<< HEAD
     ff = Person(47)
     print('fib(47) för C++ är: ', ff.fib())
     print('fib(47) för numba är: ', fib_numba(47))
+=======
+    ff = Person(27)
+    print('fib(47) för C++ är: ', f.fib())
+    print('fib(47) för numba är: ', fib_numba(27))
+>>>>>>> ca79a5cb07068f703a4911da5bd4e758a3197e7c
         
     'plots'
     plt.plot(t,timelst_cc, label = 'C++')
