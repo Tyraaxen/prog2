@@ -34,7 +34,7 @@ def main():
     
     'fib(47)'
     ff = Person(47)
-    print('fib(47) för C++ är: ', f.fib())
+    print('fib(47) för C++ är: ', ff.fib())
     print('fib(47) för numba är: ', fib_numba(47))
         
     'plots'
