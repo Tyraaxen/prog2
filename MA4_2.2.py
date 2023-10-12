@@ -33,15 +33,9 @@ def main():
         
     
     'fib(47)'
-<<<<<<< HEAD
     ff = Person(47)
-    print('fib(47) för C++ är: ', ff.fib())
-    print('fib(47) för numba är: ', fib_numba(47))
-=======
-    ff = Person(27)
     print('fib(47) för C++ är: ', f.fib())
-    print('fib(47) för numba är: ', fib_numba(27))
->>>>>>> ca79a5cb07068f703a4911da5bd4e758a3197e7c
+    print('fib(47) för numba är: ', fib_numba(47))
         
     'plots'
     plt.plot(t,timelst_cc, label = 'C++')
